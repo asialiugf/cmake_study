@@ -1,0 +1,2 @@
+/usr/bin/ar qc libLIB2.a CMakeFiles/LIB2.dir/Addd.cxx.o CMakeFiles/LIB2.dir/Subb.cpp.o
+/usr/bin/ranlib libLIB2.a
