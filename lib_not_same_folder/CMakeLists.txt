@@ -16,10 +16,12 @@ configure_file(TutorialConfig.h.in TutorialConfig.h)
 
 # add the MathFunctions library
 if(USE_MYMATH)
-  add_subdirectory(MathFunctions)
-  list(APPEND LIB1 LIB1 LIB2)
+  add_subdirectory(MathFunctions bin)
+  list(APPEND LIB1 LIB1 LIB2 Subb)
 #  list(APPEND B LIB2)
-  list(APPEND EXTRA1_INCLUDES "${PROJECT_SOURCE_DIR}/MathFunctions")
+  list(APPEND EXTRA1_INCLUDES "${PROJECT_SOURCE_DIR}/MathFunctions"
+          "${PROJECT_SOURCE_DIR}/MathFunctions/hello"
+)
 endif()
 
 # add the executable

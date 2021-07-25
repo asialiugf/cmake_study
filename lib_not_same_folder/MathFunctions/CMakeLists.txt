@@ -6,8 +6,14 @@ list(APPEND SRC1 Mysqrt.cxx)
 #list(APPEND SRC2 Addd.cxx)
 #list(APPEND SRC2 Subb.cpp)
 
+add_subdirectory(hello)
+
+#AUX_SOURCE_DIRECTORY(. SRC2)
+
 set(SRC2 Addd.cxx
-Subb.cpp)
+#${HELLOSRC}
+#./hello/Subb.cpp
+)
 
 add_library(LIB1 ${SRC1})
 add_library(LIB2 ${SRC2})
