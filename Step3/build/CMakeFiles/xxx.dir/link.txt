@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/xxx.dir/tutorial.cxx.o -o xxx  MathFunctions/libLIB1.a MathFunctions/libLIB2.a 
