@@ -17,7 +17,7 @@ configure_file(TutorialConfig.h.in TutorialConfig.h)
 # add the MathFunctions library
 if(USE_MYMATH)
   add_subdirectory(MathFunctions)
-  list(APPEND LIB1 LIB1 LIB2)
+  list(APPEND LIB_LIST LIB1 LIB2)
 #  list(APPEND B LIB2)
   list(APPEND EXTRA1_INCLUDES "${PROJECT_SOURCE_DIR}/MathFunctions")
 endif()
@@ -25,7 +25,7 @@ endif()
 # add the executable
 add_executable(xxx tutorial.cxx)
 
-target_link_libraries(xxx PRIVATE ${LIB1})
+target_link_libraries(xxx PRIVATE ${LIB_LIST})
 #target_link_libraries(xxx PRIVATE ${B})
 
 # add the binary tree to the search path for include files
