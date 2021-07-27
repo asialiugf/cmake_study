@@ -1,3 +1,5 @@
+add_library(automaton "")
+add_library(evolution "")
 target_sources(automaton
   PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}/evolution.cpp

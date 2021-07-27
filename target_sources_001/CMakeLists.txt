@@ -13,8 +13,10 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 #set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/${CMAKE_INSTALL_BINDIR})
 
 # defines targets and sources
-include(src/CMakeLists.txt)
-include(external/CMakeLists.txt)
+add_subdirectory(src)
+add_subdirectory(external)
+#include(src/CMakeLists.txt)
+#include(external/CMakeLists.txt)
 
 enable_testing()
 add_subdirectory(tests)
